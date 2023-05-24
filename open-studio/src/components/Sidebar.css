@@ -1,0 +1,52 @@
+/* Sidebar.css */
+
+div.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.sidebar {
+    width: 50px;
+    transform: translateX(150px);
+    transition: all 0.3s ease-in-out;
+}
+
+div.sidebar.open {
+    width: 200px;
+    transform: translateX(0);
+}
+
+div.sidebar h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #000;
+    padding-top: 50px;
+}
+
+div.sidebar .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sidebar .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+div.sidebar .nav-links a:hover {
+    color: #000;
+    transform: scale(1.1);
+}
